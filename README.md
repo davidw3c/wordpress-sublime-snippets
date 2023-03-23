@@ -23,7 +23,7 @@ $loop = new WP_Query(
 while ( $loop->have_posts() ) : $loop->the_post();
 ?>
  
-<h3><?php the_title(); ?></h3>
+<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
  
 <?php endwhile;
 wp_reset_postdata();
