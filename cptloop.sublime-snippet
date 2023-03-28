@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+<?php 
+\$loop = new WP_Query( array( 
+	'post_type' => 'yourposttypehere',
+	'posts_per_page' => -1 
+)); 
+?>
+
+<?php if (\$loop->have_posts()): ?>
+	<?php while ( \$loop->have_posts() ) : \$loop->the_post(); ?>
+
+		<?php if (get_the_post_thumbnail()): ?>
+			<?php the_post_thumbnail( 'custom_size_here' ); ?>
+		<?php else: ?>
+			Show fallback image
+		<?php endif ?>
+
+		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<p><?php the_time(get_option( 'date_format' )); ?></p>
+		<p><?php echo get_the_excerpt(); ?></p>
+
+	<?php endwhile; wp_reset_query(); ?>
+<?php endif; ?>
+]]></content>
+
+<tabTrigger>cptloop</tabTrigger>
+</snippet>
