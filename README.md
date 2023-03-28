@@ -1,6 +1,24 @@
 # Wordpress & Advanced Custom Fields code snippets for Sublime Text
 A collection of shortcodes to be used in the Sublime Text editor, which quickly and easily generate useful code snippets when developing websites using Wordpress and Advanced Custom Fields.
 
+## How to Install
+
+### MacOS
+
+On MacOS - Go to the folder where your Sublime Text Snippets are stored:
+
+```
+Users > yourname > Library > Application Support > Sublime Text 3 > Packages > User
+```
+
+And then copy the files from this Github repo ending in `.sublime-snippet` into this folder.
+
+Note that you will need to show hidden files as Library will be hidden. (Command + Shift + . )
+
+### Manually
+
+You could also add the files manually, one by one, by opening Sublime Text > Tools > Developer > New Snippet
+
 ## The Shortcodes
 
 ### cptloop 
