@@ -13,19 +13,25 @@ A collection of shortcodes to be used in the Sublime Text editor, which quickly 
 
 ### MacOS
 
-On MacOS - Go to the folder where your Sublime Text Snippets are stored:
+1. Go to the folder where your Sublime Text Snippets are stored:
 
 ```
 Users > yourname > Library > Application Support > Sublime Text 3 > Packages > User
 ```
 
-And then copy the files from this Github repo ending in `.sublime-snippet` into this folder.
+2. Copy the files from this Github repo ending in `.sublime-snippet` into this folder.
 
 Note that you will need to show hidden files as Library will be hidden. (Command + Shift + . )
 
+3. Restart Sublime
+
 ### Manually
 
-You could also add the files manually, one by one, by opening Sublime Text > Tools > Developer > New Snippet
+You could also add the files manually, one by one:
+
+1. Go to Sublime Text > Tools > Developer > New Snippet
+2. Paste the individual Snippet in
+3. Save
 
 ## The Shortcodes
 
@@ -66,7 +72,7 @@ $loop = new WP_Query( array(
 
 ### acfflexible
 
-```
+```php
 <?php if( have_rows('flexiblecontentfieldname') ): ?>
 	<?php while ( have_rows('flexiblecontentfieldname') ) : the_row(); ?>
 
@@ -86,7 +92,7 @@ $loop = new WP_Query( array(
 
 ### acfgallery
 
-```
+```php
 <?php 
 $field_name_here = get_field('field_name_here');
 if( $field_name_here ): ?>
@@ -104,7 +110,7 @@ if( $field_name_here ): ?>
 
 ### acfrelationship
 
-```
+```php
 <?php
 $relationship_fieldname = get_field('relationship_fieldname');
 if( $relationship_fieldname ): ?>
@@ -125,7 +131,7 @@ if( $relationship_fieldname ): ?>
 ```
 ### acfrepeater
 
-```
+```php
 <?php if( have_rows('repeater_field_name') ): ?>
 	<?php while ( have_rows('repeater_field_name') ) : the_row(); ?>
 
