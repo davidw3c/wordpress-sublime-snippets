@@ -3,6 +3,14 @@ A collection of shortcodes to be used in the Sublime Text editor, which quickly 
 
 ## How to Install
 
+### Linux 
+
+1. Open Terminal
+2. CD to `/home/yourusername/.config/sublime-text/Packages/User` - obviously 'yourusername' being replaced with your actual user!
+3. Type `xdg-open .` to open this folder
+4. Copy the files from this repo ending in `.sublime-snippet` into this folder
+5. Restart Sublime
+
 ### MacOS
 
 On MacOS - Go to the folder where your Sublime Text Snippets are stored:
